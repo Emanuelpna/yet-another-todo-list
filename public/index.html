@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <main class="w-10/12 mx-auto ml-12 mt-20">
+    <section class="flex flex-col flex-wrap align-center bg-white mx-auto text-center w-2/5  shadow-lg rounded-md px-10 py-12">
+        <form id="todoForm">
+          <label for="title" class="font-bold text-xl text-gray-800">Tarefa: </label>
+          <input type="text" name="title" id="title" class="block my-4 border-indigo-700 rounded border-2 border-b-4 px-4 py-1 w-full">
+          
+          <label for="dateLimit" class="font-bold text-xl text-gray-800">Prazo: </label>
+          <input type="date" name="dateLimit" id="dateLimit" class="block my-4 border-indigo-700 rounded border-2 border-b-4 px-4 py-1 w-full">
+
+          <button type="submit" class="block rounded shadow-lg px-10 py-3 mt-8 text-white font-bold w-full hover:shadow transition duration-150 ease-in-out" style="background: #f11a42;">Criar Todo</button>
+        </form>
+    </section>
+
+    <section id='todoList' class="flex flex-col flex-wrap align-center w-3/5 mx-auto mt-10">
+     
+    </section>
+
+  </main>
+
+  <script src="./scripts/index.js"></script>
+</body>
+</html>
